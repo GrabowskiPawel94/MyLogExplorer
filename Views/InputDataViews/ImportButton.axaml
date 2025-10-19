@@ -1,0 +1,27 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:MyLogExplorer.ViewModels.InputDataViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="MyLogExplorer.Views.InputDataViews.ImportButton"
+             x:Name="Root"
+             x:DataType="vm:ImportButtonViewModel">
+    
+    <UserControl.DataContext>
+        <vm:ImportButtonViewModel/>
+    </UserControl.DataContext>
+    
+    <Button Content="Import Logs...">
+        <Button.Flyout>
+            <MenuFlyout>
+                <MenuItem Header="Clipboard"
+                          Command="{Binding ImportLogsFromClipboardCommand}" />
+                <MenuItem Header="File"
+                          Command="{Binding ImportLogsFromFileCommand}" />
+                <!-- <MenuItem Header="Direct method" -->
+                <!--           Command="{Binding ImportLogsFromDirectMethodCommand}" /> -->
+            </MenuFlyout>
+        </Button.Flyout>
+    </Button>
+</UserControl>

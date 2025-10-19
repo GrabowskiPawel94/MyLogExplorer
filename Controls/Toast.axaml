@@ -1,0 +1,34 @@
+﻿<UserControl
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="MyLogExplorer.Controls.Toast"
+    xmlns:models="using:MyLogExplorer.Models"
+    IsHitTestVisible="False"
+    HorizontalAlignment="Right"
+    VerticalAlignment="Top"
+    Margin="16">
+
+    <ItemsControl x:Name="PART_Items">
+        <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+                <StackPanel Spacing="8"/>
+            </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+
+        <ItemsControl.ItemTemplate>
+            <DataTemplate x:DataType="models:ToastItem">
+                <Border
+                    Background="{Binding Background}"
+                    CornerRadius="8"
+                    Padding="12"
+                    Opacity="0.95"
+                    IsHitTestVisible="True">
+                    <TextBlock Text="{Binding Text}"
+                               Foreground="White"
+                               TextWrapping="Wrap"
+                               MaxWidth="320"/>
+                </Border>
+            </DataTemplate>
+        </ItemsControl.ItemTemplate>
+    </ItemsControl>
+</UserControl>
