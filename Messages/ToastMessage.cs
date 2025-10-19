@@ -9,6 +9,5 @@ public class ToastMessage : ValueChangedMessage<(string Text, IBrush Bacground, 
     public ToastMessage(string text, IBrush bacground, TimeSpan? duration = null) 
         : base((text, bacground, duration ?? TimeSpan.FromSeconds(5))) { }
     
-    
     public static IBrush InfoBg { get; } = Brushes.CornflowerBlue;
 }

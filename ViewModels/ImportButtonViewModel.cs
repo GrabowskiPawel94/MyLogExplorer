@@ -91,5 +91,4 @@ public partial class ImportButtonViewModel : ObservableObject
             SubmitTextCommand?.Execute(text);
         }
     }
-
 }

@@ -19,8 +19,6 @@ public partial class ImportButton : UserControl
         
         DataContextChanged += (_, __) => SyncSubmitCommandIntoVm();
         PropertyChanged += OnPropertyChanged;
-
-
     }
     
     // Command that parent ViewModel binds to — receives the imported text
