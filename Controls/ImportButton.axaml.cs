@@ -2,9 +2,9 @@
 using Avalonia;
 using Avalonia.Controls;
 using CommunityToolkit.Mvvm.Input;
-using MyLogExplorer.ViewModels.InputDataViewModels;
+using MyLogExplorer.ViewModels;
 
-namespace MyLogExplorer.Views.InputDataViews;
+namespace MyLogExplorer.Controls;
 
 public partial class ImportButton : UserControl
 {

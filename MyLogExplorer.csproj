@@ -32,5 +32,9 @@
       <DependentUpon>Toast.axaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Controls\ImportButton.axaml.cs">
+      <DependentUpon>ImportButton.axaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

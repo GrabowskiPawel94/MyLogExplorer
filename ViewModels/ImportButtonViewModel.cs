@@ -8,7 +8,7 @@ using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
 using MyLogExplorer.Messages;
 
-namespace MyLogExplorer.ViewModels.InputDataViewModels;
+namespace MyLogExplorer.ViewModels;
 
 public partial class ImportButtonViewModel : ObservableObject
 {
